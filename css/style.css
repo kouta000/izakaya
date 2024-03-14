@@ -74,9 +74,9 @@ li {
 }
 
 /*-------------------------------------------
-Menu
+Mainvisual
 -------------------------------------------*/
-#menu {
+#mainvisual {
     margin-bottom: 90px;
     background-color: rgb(247, 247, 155); /* メニューにも背景色を追加 */
     width: 100%; /* 幅を100%に設定 */
@@ -84,9 +84,21 @@ Menu
     justify-content: center; /* 画像を中央に配置 */
 }
 
-#menu img {
+#mainvisual img {
     width: 100%; /* 幅を100%に設定 */
     max-width: 100%; /* 最大幅を指定 */
     height: auto; /* 高さを自動調整 */
     display: block;
 }
+
+/*-------------------------------------------
+Menu
+-------------------------------------------*/
+#menu ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  #menu .text {
+    text-align: left;
+  }
+
