@@ -97,8 +97,8 @@ Menu
 #menu ul {
     display: flex;
     justify-content: space-between;
-  }
+}
   #menu .text {
     text-align: left;
-  }
+}
 
