@@ -96,9 +96,13 @@ Menu
 -------------------------------------------*/
 #menu ul {
     display: flex;
-    justify-content: space-between;
+    /*flex-wrap: wrap;*/
+    width: 100%;
+    /*justify-content: space-between;
+    overflow: hidden;
+    padding-top: 56.25%*/
 }
-  #menu .text {
+#menu .text {
     text-align: left;
 }
 
