@@ -96,13 +96,21 @@ Menu
 -------------------------------------------*/
 #menu ul {
     display: flex;
-    /*flex-wrap: wrap;*/
-    width: 100%;
-    /*justify-content: space-between;
-    overflow: hidden;
-    padding-top: 56.25%*/
+    justify-content: space-around; /* 画像を等間隔に配置 */
+    list-style-type: none; /* リストのマーカーを削除 */
+    padding: 0; /* デフォルトのpaddingを削除 */
 }
-#menu .text {
-    text-align: left;
+
+#menu li {
+    flex-grow: 1; /* 各アイテムが均等なスペースを取る */
+    text-align: center; /* アイテム内のテキストを中央揃え */
 }
+
+#menu img {
+    width: 100%; /* 画像を親要素の幅いっぱいに広げる */
+    height: 200px; /* アスペクト比を保持しながら幅に合わせて高さを自動調整 */
+    flex-basis: 100%;
+    object-fit: cover;
+}
+
 
